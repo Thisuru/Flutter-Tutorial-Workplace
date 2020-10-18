@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage>{
                                 width: 2.0
                               ),
                               image: DecorationImage(
-                                image: AssetImage('images/profilePic.jpeg'),
+                                image: AssetImage('images/Thisuru.jpg'),
                               )
                             ),
                           ),
@@ -195,6 +195,7 @@ class _MyHomePageState extends State<MyHomePage>{
                             ),
                             Text(
                               'Shirt',
+
                               style: TextStyle(fontFamily: 'Quicksand', fontWeight: FontWeight.bold),
                             ),
                           ],
@@ -205,9 +206,114 @@ class _MyHomePageState extends State<MyHomePage>{
                 ],
               )
             ],
-          )
+          ),
+          specialItemCard('Frock', 'images/frock.png', false)
         ],
       ),
     );
   }
+}
+
+Widget specialItemCard(String title, String imagePath, bool isLoved){
+ 
+  return Padding(
+    padding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
+    child: Container(
+      height: 140.0,
+      width: double.infinity,
+      color: Colors.white,
+      child: Row(
+        children: <Widget>[
+          Container(
+            width: 140.0,
+            height: 150.0,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(imagePath),
+                fit: BoxFit.cover
+              )
+            ),
+          ),
+          SizedBox(width: 4.0),
+          Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontSize:18.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(width: 45.0),
+                  Material(
+                    elevation: isLoved ? 0.0 : 2.0,
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Container(
+                      height: 40.0,
+                      width: 40.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(18.0),
+                        color: isLoved ? Colors.grey.withOpacity(0.3) : Colors.white
+                      ),
+                      child: Center(
+                        child: isLoved ? Icon(Icons.favorite_border) : Icon(Icons.favorite, color: Colors.red,),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(height: 5.0),
+              Container(
+                width: 170.0,
+                child: Text(
+                  'This is a special deal',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 13.0
+                  ),
+                ),
+              ),
+              SizedBox(height: 5.0),
+              Row(
+                children: <Widget>[
+                  SizedBox(width: 35.0),
+                  Container(
+                    height: 44.0,
+                    width: 50.0,
+                    color: Colors.yellowAccent,
+                    child: Center(
+                      child: Text(
+                        '\$300',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 44.0,
+                    width: 100.0,
+                    color: Colors.black,
+                    child: Center(
+                      child: Text(
+                        'Add to Cart',
+                        style: TextStyle(
+                          color: Colors.amber,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              )
+            ],
+          )
+        ],
+      ),
+    ),
+  );
 }
