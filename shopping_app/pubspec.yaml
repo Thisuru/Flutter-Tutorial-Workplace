@@ -43,8 +43,10 @@ flutter:
     - images/profilePic.jpeg
     - images/cart.png
     - images/shirt1.jpeg
+    - images/shirt2.jpeg
     - images/frock.png
     - images/frock1.jpeg
+    - images/jeans.jpeg
     - images/Thisuru.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see

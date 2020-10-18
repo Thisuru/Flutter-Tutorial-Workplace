@@ -207,7 +207,9 @@ class _MyHomePageState extends State<MyHomePage>{
               )
             ],
           ),
-          specialItemCard('Frock', 'images/frock.png', false)
+          specialItemCard('Frock', 'images/frock.png', false),
+          specialItemCard('Shirt', 'images/shirt2.jpeg', true),
+          specialItemCard('Jeans', 'images/jeans.jpeg', false)
         ],
       ),
     );
