@@ -92,7 +92,19 @@ class _MyHomePageState extends State<MyHomePage>{
                                 image: AssetImage('images/profilePic.jpeg'),
                               )
                             ),
-                          )
+                          ),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width-120),
+                          Container(
+                            alignment: Alignment.topRight,
+                            child: IconButton(
+                                icon: Icon(Icons.menu),
+                                onPressed: (){},
+                                color: Colors.white,
+                                iconSize: 35.0,
+                            ),
+                          ),
+                          SizedBox(height: 15.0),
                         ],
                       ),
                     ],
