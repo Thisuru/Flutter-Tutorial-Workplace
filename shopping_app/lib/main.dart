@@ -140,7 +140,66 @@ class _MyHomePageState extends State<MyHomePage>{
                             ),
                           ),
                         )
-                      )
+                      ),
+                      SizedBox(height: 10.0)
+                    ],
+                  )
+                ],
+              ),
+              SizedBox(height: 10),
+              Stack(
+                children: <Widget>[
+                  SizedBox(height: 10.0),
+                  Material(
+                    elevation: 1.0,
+                    child: Container(
+                      height: 70.0,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Container(
+                        height: 75.0,
+                        width: MediaQuery.of(context).size.width /4,
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              height: 50.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('images/shirt1.jpeg'),
+                                )
+                              ),
+                            ),
+                            Text(
+                              'Shirt',
+                               style: TextStyle(fontFamily: 'Quicksand', fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 75.0,
+                        width: MediaQuery.of(context).size.width /4,
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              height: 50.0,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage('images/frock1.jpeg'),
+                                  )
+                              ),
+                            ),
+                            Text(
+                              'Shirt',
+                              style: TextStyle(fontFamily: 'Quicksand', fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   )
                 ],
