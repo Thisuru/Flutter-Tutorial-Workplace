@@ -107,6 +107,18 @@ class _MyHomePageState extends State<MyHomePage>{
                           SizedBox(height: 15.0),
                         ],
                       ),
+                      SizedBox(height: 45.0,),
+                      Padding(
+                        padding: EdgeInsets.only(left: 15.0),
+                        child: Text(
+                          'Hi Welcome',
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+//
                     ],
                   )
                 ],
