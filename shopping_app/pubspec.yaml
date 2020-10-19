@@ -41,7 +41,6 @@ flutter:
   uses-material-design: true
   assets:
     - images/profilePic.jpeg
-    - images/cart.png
     - images/shirt1.jpeg
     - images/shirt2.jpeg
     - images/frock.png

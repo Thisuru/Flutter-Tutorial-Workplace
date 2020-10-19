@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/other_pages/second_route.dart';
 
 void main() => runApp(MyApp());
 
@@ -99,7 +100,12 @@ class _MyHomePageState extends State<MyHomePage>{
                             alignment: Alignment.topRight,
                             child: IconButton(
                                 icon: Icon(Icons.menu),
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => SecondRoute()),
+                                  );
+                                },
                                 color: Colors.white,
                                 iconSize: 35.0,
                             ),
