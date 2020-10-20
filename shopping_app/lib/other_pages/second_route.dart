@@ -10,7 +10,12 @@ class SecondRoute extends StatelessWidget {
         title: Text(caption),
       ),
       body: Center(
-        child: Text('My Page'),
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
       ),
       drawer: Drawer(
         child: ListView(

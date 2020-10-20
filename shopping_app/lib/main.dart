@@ -101,7 +101,6 @@ class _MyHomePageState extends State<MyHomePage>{
                             child: IconButton(
                                 icon: Icon(Icons.menu),
                                 onPressed: (){
-                                  SecondRoute();
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(builder: (context) => SecondRoute()),
